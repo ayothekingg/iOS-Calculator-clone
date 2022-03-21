@@ -1,0 +1,79 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container{
+  border: 2px black solid; ;
+width: 270px;
+height: auto;
+background-color: black;
+align-items: center;
+margin: auto;
+padding: 10px;
+
+}
+
+#button-ac,
+#button-pm,
+#button-percent{
+  color: black;
+  background-color: lightgrey;
+}
+  
+  
+button{
+    border-radius:50px;
+  width: 60px;
+  height: 60px;
+    color: white;
+    font-size: 28px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+}
+#output{
+    text-align: right;
+    display: block;
+    font-size: 30px;
+    color: white;
+
+
+}
+
+
+.bzero{
+    width: 127px;
+    border-radius: 30px;
+    text-align: left;
+    height: 50px;
+    background-color: dimgrey;
+}
+
+
+.x,
+ .minus,
+  .divide,
+   .equal{
+     background-color: orange;
+   }
+
+ .dot,
+ .percent,
+ .number{ 
+     background-color: dimgrey;
+   }
+
+   #history{
+     text-align: right;
+     color: white;
+   }
+
+   #output{
+     height: 80px;
+   }
+
+  
+
+ 

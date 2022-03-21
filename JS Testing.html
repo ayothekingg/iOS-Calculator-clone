@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js testing</title>
+
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="loop"></p>
+    
+
+<p id="get" > Just sitting here chilling. </p>
+<button onclick="window.print()">Click to print</button>
+<button onclick="Sit()">Please change</button>
+<button onclick= "Not()">Or </button>
+    <p id="og">James Amoo is the only starboy available. Any other star</p>
+
+    <p id="cng"> James is starboy</p>
+    <button onclick="Re()">Click</button>
+   <button onclick="Replace()">Click to replace</button>
+
+   <input id="x" type="text">
+<button onclick="Test()" type="button">Submit</button>
+ <p id="otp"></p>
+
+
+
+
+
+  <script>
+        var person = {
+            name:"James",
+            surname:"Amoo",
+        }
+        document.getElementById('demo').innerHTML= person.name + " " + person.surname;
+    
+
+    function Replace() {
+        var str= document.getElementById('og').innerHTML;
+        var txt = str.replace(/James Amoo/g, "Ayomide");
+        document.getElementById('og').innerHTML=txt
+    }
+
+
+
+function Sit() {
+var get = document.getElementById('get').innerHTML;
+var cng = get.replace("chill", "laugh");
+document.getElementById('get').innerHTML=cng;
+}
+
+ function Not() {
+var not = document.getElementById('get').innerHTML;
+var ner = not.replace("laugh", "chill");
+document.getElementById('get').innerHTML=ner;
+
+}
+
+var text = "";
+var i = 0;
+while(i < 10) {
+    text += "<br> The number is " + i;i++;
+
+document.getElementById('loop').innerHTML=text;
+}
+
+function Test(){
+var output, x;
+output=document.getElementById('otp');
+x=document.getElementById('x').value;
+}
+try{
+if (x == "") throw "empty";
+if (x < 5) throw "too low";
+if (isNaN(x)) throw "Not a number"
+if (x > 10) throw "Too high"
+}
+catch(err) {
+    output.innerHTML=err;
+}
+
+function Re() {
+    var cng = document.getElementById('cng').innerHTML;
+    var str = cng.replace("James", "John");
+    document.getElementById('cng').innerHTML=str;
+}
+
+
+
+
+
+
+
+            </script>
+
+
+</body>
+
+</html>
